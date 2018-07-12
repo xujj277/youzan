@@ -111,6 +111,10 @@ arr-flatten@^1.0.1:
   version "1.1.0"
   resolved "http://registry.npm.taobao.org/arr-flatten/download/arr-flatten-1.1.0.tgz#36048bbff4e7b47e136644316c99669ea5ae91f1"
 
+array-find-index@^1.0.2:
+  version "1.0.2"
+  resolved "http://registry.npm.taobao.org/array-find-index/download/array-find-index-1.0.2.tgz#df010aa1287e164bbda6f9723b0a96a1ec4187a1"
+
 array-flatten@1.1.1:
   version "1.1.1"
   resolved "http://registry.npm.taobao.org/array-flatten/download/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
@@ -188,6 +192,13 @@ aws-sign2@~0.6.0:
 aws4@^1.2.1:
   version "1.6.0"
   resolved "http://registry.npm.taobao.org/aws4/download/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
+
+axios@^0.18.0:
+  version "0.18.0"
+  resolved "http://registry.npm.taobao.org/axios/download/axios-0.18.0.tgz#32d53e4851efdc0a11993b6cd000789d70c05102"
+  dependencies:
+    follow-redirects "^1.3.0"
+    is-buffer "^1.1.5"
 
 babel-code-frame@^6.11.0, babel-code-frame@^6.22.0:
   version "6.22.0"
@@ -1352,6 +1363,12 @@ debug@2.6.8, debug@^2.1.1, debug@^2.2.0:
   dependencies:
     ms "2.0.0"
 
+debug@^3.1.0:
+  version "3.1.0"
+  resolved "http://registry.npm.taobao.org/debug/download/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
+  dependencies:
+    ms "2.0.0"
+
 decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   version "1.2.0"
   resolved "http://registry.npm.taobao.org/decamelize/download/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
@@ -1417,6 +1434,12 @@ dom-serializer@0:
 dom-walk@^0.1.0:
   version "0.1.1"
   resolved "http://registry.npm.taobao.org/dom-walk/download/dom-walk-0.1.1.tgz#672226dc74c8f799ad35307df936aba11acd6018"
+
+dom7@^2.0.6:
+  version "2.0.7"
+  resolved "http://registry.npm.taobao.org/dom7/download/dom7-2.0.7.tgz#43940bff361cc0e5f38c349b055fd60c10309b89"
+  dependencies:
+    ssr-window "^1.0.0"
 
 domain-browser@^1.1.1:
   version "1.1.7"
@@ -1709,6 +1732,12 @@ find-up@^2.1.0:
 flatten@^1.0.2:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/flatten/download/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
+
+follow-redirects@^1.3.0:
+  version "1.5.0"
+  resolved "http://registry.npm.taobao.org/follow-redirects/download/follow-redirects-1.5.0.tgz#234f49cf770b7f35b40e790f636ceba0c3a0ab77"
+  dependencies:
+    debug "^3.1.0"
 
 for-in@^1.0.1:
   version "1.0.2"
@@ -2538,6 +2567,14 @@ minimist@^1.2.0:
   version "1.2.0"
   resolved "http://registry.npm.taobao.org/minimist/download/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
 
+mint-ui@^2.2.13:
+  version "2.2.13"
+  resolved "http://registry.npm.taobao.org/mint-ui/download/mint-ui-2.2.13.tgz#856a2cba9608c6ecf21f0e521ce89ed8ddfe33d3"
+  dependencies:
+    array-find-index "^1.0.2"
+    raf.js "0.0.4"
+    vue-lazyload "^1.0.1"
+
 "mkdirp@>=0.5 0", mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
   version "0.5.1"
   resolved "http://registry.npm.taobao.org/mkdirp/download/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
@@ -3226,6 +3263,10 @@ qs@6.4.0, qs@~6.4.0:
   version "6.4.0"
   resolved "http://registry.npm.taobao.org/qs/download/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
 
+qs@^6.5.2:
+  version "6.5.2"
+  resolved "http://registry.npm.taobao.org/qs/download/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
+
 query-string@^4.1.0:
   version "4.3.4"
   resolved "http://registry.npm.taobao.org/query-string/download/query-string-4.3.4.tgz#bbb693b9ca915c232515b228b1a02b609043dbeb"
@@ -3240,6 +3281,10 @@ querystring-es3@^0.2.0:
 querystring@0.2.0, querystring@^0.2.0:
   version "0.2.0"
   resolved "http://registry.npm.taobao.org/querystring/download/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
+
+raf.js@0.0.4:
+  version "0.0.4"
+  resolved "http://registry.npm.taobao.org/raf.js/download/raf.js-0.0.4.tgz#f15af445d241b27fa7131a57450b67ef9c402fec"
 
 randomatic@^1.1.3:
   version "1.1.7"
@@ -3641,6 +3686,10 @@ sshpk@^1.7.0:
     jsbn "~0.1.0"
     tweetnacl "~0.14.0"
 
+ssr-window@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/ssr-window/download/ssr-window-1.0.0.tgz#8ed1b6beaa0a371ba7e74d6515d584c3f1cf973c"
+
 stackframe@^1.0.3:
   version "1.0.3"
   resolved "http://registry.npm.taobao.org/stackframe/download/stackframe-1.0.3.tgz#fe64ab20b170e4ce49044b126c119dfa0e5dc7cc"
@@ -3741,6 +3790,13 @@ svgo@^0.7.0:
     mkdirp "~0.5.1"
     sax "~1.2.1"
     whet.extend "~0.9.9"
+
+swiper@^4.3.3:
+  version "4.3.3"
+  resolved "http://registry.npm.taobao.org/swiper/download/swiper-4.3.3.tgz#92e39c806ead23a18e5c3251dfba1ae9ce76270e"
+  dependencies:
+    dom7 "^2.0.6"
+    ssr-window "^1.0.0"
 
 tapable@^0.2.7, tapable@~0.2.5:
   version "0.2.8"
@@ -3926,6 +3982,10 @@ vary@~1.1.1:
   version "1.1.1"
   resolved "http://registry.npm.taobao.org/vary/download/vary-1.1.1.tgz#67535ebb694c1d52257457984665323f587e8d37"
 
+velocity-animate@^1.5.1:
+  version "1.5.1"
+  resolved "http://registry.npm.taobao.org/velocity-animate/download/velocity-animate-1.5.1.tgz#606837047bab8fbfb59a636d1d82ecc3f7bd71a6"
+
 vendors@^1.0.0:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/vendors/download/vendors-1.0.1.tgz#37ad73c8ee417fb3d580e785312307d274847f22"
@@ -3947,6 +4007,10 @@ vm-browserify@0.0.4:
 vue-hot-reload-api@^2.1.0:
   version "2.1.0"
   resolved "http://registry.npm.taobao.org/vue-hot-reload-api/download/vue-hot-reload-api-2.1.0.tgz#9ca58a6e0df9078554ce1708688b6578754d86de"
+
+vue-lazyload@^1.0.1:
+  version "1.2.6"
+  resolved "http://registry.npm.taobao.org/vue-lazyload/download/vue-lazyload-1.2.6.tgz#baa04c172d52a812608eb12c7a6bfb14f5c91079"
 
 vue-loader@^12.1.0:
   version "12.2.2"
@@ -3991,6 +4055,10 @@ vue-template-es2015-compiler@^1.2.2:
 vue@^2.3.3:
   version "2.4.2"
   resolved "http://registry.npm.taobao.org/vue/download/vue-2.4.2.tgz#a9855261f191c978cc0dc1150531b8d08149b58c"
+
+vuex@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/vuex/download/vuex-3.0.1.tgz#e761352ebe0af537d4bb755a9b9dc4be3df7efd2"
 
 watchpack@^1.3.1:
   version "1.4.0"
