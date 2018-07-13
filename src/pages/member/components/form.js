@@ -18,6 +18,11 @@ export default {
       instance: this.$route.query.instance
     }
   },
+  computed: {
+    lists() {
+      return this.$store.state.lists
+    }
+  },
   created () {
     if(this.type === 'edit') {
       let ad  = this.instance
@@ -34,29 +39,40 @@ export default {
       let data = {name, tel, provinceValue, cityValue, districtValue, address}
       if(this.type === 'edit') {
         data.id = this.id
-        Address.update(data).then(res => {
-          this.$router.go(-1)
-        })
+        // Address.update(data).then(res => {
+        //   this.$router.go(-1)
+        // })
+        this.$store.dispatch('updateAction', data)
       }else{
-        Address.add(data).then(res => {
-          this.$router.go(-1)
-        })
+        // Address.add(data).then(res => {
+        //   this.$router.go(-1)
+        // })
+        this.$store.dispatch('addAction', data)
       }
     },
     remove() {
       if(window.confirm('确认删除？')){
-        Address.remove(this.id).then(res => {
-          this.$router.go(-1)
-        })
+        // Address.remove(this.id).then(res => {
+        //   this.$router.go(-1)
+        // })
+        this.$store.dispatch('removeAction', this.id)
       }
     },
     setDefault() {
-      Address.setDefault(this.id).then(res => {
-        this.$router.go(-1)
-      })
+      // Address.setDefault(this.id).then(res => {
+      //   this.$router.go(-1)
+      // })
+      this.$store.dispatch('setDefaultAction', this.id)
     }
   },
   watch: {
+    lists: {
+      handler() {
+        this.$router.go(-1)
+      },
+      deep: true
+      
+    },
     provinceValue(val) {
       if(val === -1) return 
       let list = this.addressData.list

@@ -30,7 +30,8 @@ new Vue({
     skuNum: 1,
     showAddMsg: false,
     isAddSku: false,
-    loading: false
+    loading: false,
+    
   },
   created() {
     this.getDetails()
@@ -77,6 +78,10 @@ new Vue({
           this.showSku = false
           this.isAddSku = true
           this.showAddMsg = true
+
+          setTimeout(() => {
+            this.showAddMsg = false
+          },1000)
         }
       })
     }
