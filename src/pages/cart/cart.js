@@ -140,6 +140,12 @@ new Vue({
       
     },
     reduce(good) {
+      // axios.post(url.cartReduce, {
+      //   id: good.id,
+      //   number: 1
+      // }).then(res => {
+      //   good.number--
+      // })
       Cart.reduce(good.id).then(res => {
         good.number--
       })

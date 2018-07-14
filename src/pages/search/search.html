@@ -35,7 +35,7 @@
          v-if="searchList">
       <div class="custom-search js-search-bar">
         <form>
-          <input type="search" class="custom-search-input" autocomplete="off" name="keyword" :value="keyword" placeholder="搜索更赞的商品"
+          <input type="search" class="custom-search-input" autocomplete="off" name="keyword" v-model="keyword" placeholder="搜索更赞的商品"
             style="padding-left: 66px;">
           <span class="icon-custom-search"></span>
         </form>
