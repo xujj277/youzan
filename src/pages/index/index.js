@@ -28,7 +28,7 @@ let app = new Vue({
   methods: {
     getLists(){
       this.loading = true
-      axios.post(url.hotLists, {
+      axios.get(url.hotLists, {
         pageNum : this.pageNum,
         pageSize: this.pageSize
       }).then(res => {
